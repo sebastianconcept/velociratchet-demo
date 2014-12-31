@@ -1,0 +1,22 @@
+<template name="home">
+    {{>header pageTitle='Velociratchet' }}
+
+    <div class="content">
+        <p class="content-padded">Velociratchet is a Meteor mobile app prototyping tool; it features the <b>Ratchet CSS &amp; HTML</b> along with <b>page transitions powered by Velocity, Momentum, and Iron Router</b>.</p>
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a href="{{pathFor 'page1'}}" class="push-right navigate-right">
+                        <strong>Page 1</strong>
+                    </a>
+                </li>
+                <li class="table-view-cell">
+                    <a href="{{pathFor 'page2'}}" class="push-right navigate-right">
+                        <strong>Page 2</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</template>
